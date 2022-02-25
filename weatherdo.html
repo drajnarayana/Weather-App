@@ -12,11 +12,18 @@
 
 <body>
 
-    <input type="text" id="city"/>
+  
+  <div class="main"> 
+    <input  type="text" id="city" size="30" />
     <button onclick="getWeather()">Search</button>
-   
 
- <iframe
+  </div>
+  
+  
+    
+    <!-- <img src="https://img.icons8.com/ios/50/000000/worldwide-location.png" onclick="getweather()"/> -->
+
+ <!-- <iframe
   width="600"
   height="450"
   style="border:0"
@@ -30,7 +37,28 @@
       
     </div>
     <h1>Forecasted Data:</h1>
-    <div id="forecast"></div>
+    <div id="forecast"></div> -->
+
+    <div id="container">
+      <div id="upper">
+        <div id="tempDiv">
+      
+          <div id="sun"></div>
+        </div>
+        <div id="frame">
+           <iframe
+           width="480"
+           height="305"
+         style="border:0"
+        loading="lazy"
+          allowfullscreen>
+  
+          </iframe>
+        </div>
+      </div>
+      <div id="forecast"></div>
+
+    </div>
 </body>
 </html>
 

@@ -3,6 +3,9 @@
   let apikey="AIzaSyChX8y4lTPj9TgRhz8pLxWtc7_k6HwDuIw"
   let key="1df615ad0582967ddd8157022733828e"
   var tempDiv=document.getElementById("tempDiv")
+  // var clouds=document.getElementById("clouds")
+  // var sun=document.getElementById("sun")
+
   var forcastedDiv=document.getElementById("forecast")
   
   async function getWeather(){
@@ -62,7 +65,8 @@
  sunsetTag.innerHTML=`Sunset: ${sunset.getHours()+":"+sunset.getMinutes()}PM<img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"></img>`;
     //  console.log(temp,mintemp,maxtemp,deg,speed,all,sunrise,sunset)
      
-    tempDiv.append(temparature,minTemp,maxTemp,windSpeed,cloudsTag,sunriseTag,sunsetTag)
+    //temparature,minTemp,maxTemp,windSpeed,cloudsTag
+    tempDiv.append(sunriseTag,sunsetTag)
     
     //  var weatherdata=localStorage.setItem("weatherdata",JSON.stringify(weather))
      
